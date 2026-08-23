@@ -10,7 +10,7 @@ print(len(response.text)) #yeah ur cooked bro 2 million characters
 
 #First part of the puzzle: extracting the data as a String. From reading the HTML, it seems like
 # each daypart (what time of day) tells us what dining hall is open (in military time), when it's open, and what menu IDs there are. 
-# But we don't actually know what each ID corresponds to what.  
+# But we don't actually know what each ID corresponds to what.  we'll figure it out lol
 
 #First part of scraper
 
@@ -42,7 +42,7 @@ for string in dayparts_array:
 
     dayparts_array[dayparts_array.index(string)] = replacement
 
-print(dayparts_array[0]) #this is the array of all the dayparts. each daypart has a name, start time, end time, and menu IDs.
+print(dayparts_array[0]) #this is the array of all the dayparts.
 
 """
 #we gonna create ts as a file and then read it manually
